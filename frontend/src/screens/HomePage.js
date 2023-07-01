@@ -12,7 +12,7 @@ function HomePage()
       
       useEffect(() => {
       ( async () => {
-      const response = await fetch('http:/localhost/api/data');
+      const response = await fetch('http://localhost:3002/api/data');
       const data = await response.json()
       if(data){
       setItems(data[1])
